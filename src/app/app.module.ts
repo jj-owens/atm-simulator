@@ -3,26 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { WithdrawComponent } from './withdraw/withdraw.component';
-import { RestockComponent } from './restock/restock.component';
-import { BankerComponent } from './banker/banker.component';
-import { NotfoundComponent } from './notfound/notfound.component';
-import { CenterpanelComponent } from './centerpanel/centerpanel.component';
+import { LoginModule } from './login/login.module';
+import { NotFoundModule } from './not-found/not-found.module';
+import { BankerModule } from './banker/banker.module';
+import { RestockModule } from './restock/restock.module';
+import { WithdrawModule } from './withdraw/withdraw.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginComponent,
-    WithdrawComponent,
-    RestockComponent,
-    BankerComponent,
-    NotfoundComponent,
-    CenterpanelComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BankerModule,
+    RestockModule,
+    WithdrawModule,
+    LoginModule,
+    AppRoutingModule,
+    NotFoundModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

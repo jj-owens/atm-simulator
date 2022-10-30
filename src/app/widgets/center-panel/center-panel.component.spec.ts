@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RestockComponent } from './restock.component';
+import { CenterPanelComponent } from './center-panel.component';
 
-describe('RestockComponent', () => {
-  let component: RestockComponent;
-  let fixture: ComponentFixture<RestockComponent>;
+describe('CenterPanelComponent', () => {
+  let component: CenterPanelComponent;
+  let fixture: ComponentFixture<CenterPanelComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RestockComponent ]
+      declarations: [ CenterPanelComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(RestockComponent);
+    fixture = TestBed.createComponent(CenterPanelComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
